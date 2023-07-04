@@ -1,0 +1,411 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+/*.imageSlide{
+  object-fit: cover;
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+padding:2px 8px;}*/
+  
+
+a{
+  text-decoration: none;
+  color:white;
+  stroke-opacity: initial;
+  font-size: 15px;
+ 
+}
+
+.invalid-field{
+  border-color: #dc3545;
+  color: #dc3545;
+  background-color: #fff;
+ }
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #333;
+  z-index: 10;
+  
+}
+.card:hover button.delete-button {
+  visibility: visible;
+  size: 50px;
+
+}
+button.delete-button
+{
+  visibility: visible;
+  position: fixed;
+  bottom: 25px;
+  left: 60px;
+ border-radius: 2px;
+ padding:1px 1px;
+
+}
+.card .delete-button {
+  visibility: hidden;
+}
+.imageUploadCard{
+align-items: center;
+height: 100px;
+width: 20%;
+background-color: whitesmoke;
+border-radius: 10px;
+padding:2px 6px;
+padding-top:15px;
+position: relative;
+bottom:70px;
+
+}
+   .card{
+object-fit: cover;
+align-items: center;
+margin: 0px;
+max-width: 100%;
+max-height:80px;
+overflow: hidden;
+background-size: cover;
+display: grid;
+position: relative;
+cursor: pointer;
+transition: .15s linear;
+padding-bottom: 56.25%;
+
+  }
+  .cardimage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+  }
+  img.cardTop.showImage
+  {
+   position: relative;
+ 
+   
+  }
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }
+.cardTop{
+background-color: black;
+position: relative;
+display: flex;
+height: 100px;
+border-radius:10px;
+width: 100%;
+}
+
+.btn {
+  padding: 2px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+ font-size: 13px;
+ position: relative;
+}
+
+.btn:hover {
+  background-color: gray;
+  transform: scale(1);
+ 
+}
+.UploadImage{
+  position: relative;
+  left: 200px;
+}
+.fileChoose {
+ 
+
+  height: 20px;
+  width: 100%;
+  position: relative;
+  right:180px;
+  bottom: 115px;
+}
+.cards :hover{
+  cursor: pointer;
+  transform: scale(1.3);
+  box-shadow: 0 0 80px black;
+  z-index: 10;
+
+  
+}
+.btnupload{
+  position: relative;
+  right:140px;
+ bottom:80px;
+ align-items: center;
+
+}
+.buttonUpload{
+  display: flex;
+}
+
+.form-control-file {
+  margin:0;
+  padding: 2px;
+  font-size: 0.5rem;
+  line-height: 1.2;
+  color: black;
+  background-color: whitesmoke;
+  border-color: black;
+  text-align: center;
+  height: 100px;
+  
+}
+.form-control-file:focus {
+  border-color: black;
+  outline: 5;
+  box-shadow: 0 0 0 12rem rgba(0, 123, 255, .25);
+  
+}
+.form-control-file {
+  font-size: 0.7rem;
+  color: green;
+  
+}
+.cards {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  background-color:white;
+   height:100px;
+   position: relative;
+   bottom:15px;
+   left:190px;
+}
+
+.cards img{
+  object-fit: cover;
+  position: relative;
+  left: 45px;
+  
+}
+
+.carousel-inner { overflow: visible; }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  visibility:hidden;
+}
+.carousel-indicators 
+{
+  display: none;
+  visibility:hidden;
+}
+.imageMain{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  left: 10px;
+  padding:5px 5px;
+  margin-top: 100px;
+  top:20px;
+
+}
+.imageslistuploads{
+  background-color: gray;
+justify-content: center;
+
+}
+img {
+  max-width: 100%;
+  height: 100%;
+ 
+}
+.modal-dialog {
+  width: 30%;
+}
+.selectFloor{
+  position: relative;
+  bottom:120px;
+  width: 10%;
+}
+/*RESPONSIVE GRIDS*/
+/*grid-template-columns:repeat(auto-fit, minmax(120px,1fr));  */  
+/* grid-template-columns: repeat(3,1fr)*/
+/*grid-template-columns:repeat(1,1fr)*/
+.floorname{
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom:90px;
+  font-size: large;
+  text-align: center;
+  font-family: MB Corpo S Text  ; 
+}
+.login-logo{
+  font-weight: 300;
+  margin-bottom: .9rem;
+  opacity: '.8';
+  width: 120px;
+}
+
+/* .css-n7rtur-MuiPaper-root-MuiAppBar-root, .css-104q197-MuiPaper-root-MuiAppBar-root{
+  z-index: 120 !important;
+} */
+
+.themeMBGSP{
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
+.removeUnderLine{
+  text-decoration: none !important;
+}
+
+.marginTopDefault{
+  margin-top: 10px;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.colorWhite{
+  color: #ffffff !important;
+}
+
+#footer
+{
+    clear: both;
+    border: 1px groove #aaaaaa;
+    color: White;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.displayHide{
+  display:none !important;
+}
+
+.displayHoverNone:hover{
+  background-color : transparent !important;
+}
+
+.imgBlob {
+  display: inline-block;
+  height: 213px;
+  width: 320px;
+}
+img[src=""] {
+  visibility: hidden;
+  background-color:#ddd;
+}
+
+.clickableHandCursor:hover {
+  cursor: pointer;
+}
+.deleteImageModal{
+  color: black;
+  font-family: MB Corpo S Text;
+}
+.modalTitle {
+  color:red;
+  font-size: 1.1rem;
+  font-family: MB Corpo S Text;
+}
+.modal-footer button.btn-primary:hover {
+  background-color: red;
+  border-color: red;
+}
+
+.modal-footer button.btn-secondary:hover {
+  background-color:  green;
+  border-color: green;
+}
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.gridimages{
+  width: 100%;
+ 
+ 
+  
+}
+.floorname1{
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top:15px;
+  font-size: large;
+  text-align: center;
+}
+
+.selectFloor1{
+  position: relative;
+  bottom:20px;
+  width: 10%;
+}
+/* .remarks{
+  position: absolute;
+  left: 500px;
+top:35px;
+  width: 50%;
+  height: 15%;
+  padding: 2px;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  font-family: MB Corpo S Text;
+border-radius: 2px;
+
+} */
+.remark{
+  position: relative;
+  left: 600px;
+  bottom:170px;
+  width:40%;
+  height:100px;
+  background-color:whitesmoke;
+  border-radius:10px;
+  text-align: center;
+
+}
